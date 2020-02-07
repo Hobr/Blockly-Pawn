@@ -1,33 +1,32 @@
 <template>
   <div id="app">
+    <img src="./assets/logo.png">
     <div>
-      <el-container>
-        <el-header>Blockly-Pawn</el-header>
-        <el-main><Blockly/></el-main>
-        <el-footer>
-          <img src="https://img.shields.io/github/issues/Hobr/Blockly-Pawn?style=for-the-badge">
-          <img src="https://img.shields.io/github/license/Hobr/Blockly-Pawn?style=for-the-badge">
-          <img src="https://img.shields.io/github/stars/Hobr/Blockly-Pawn?style=for-the-badge">
-          <img src="https://img.shields.io/github/package-json/v/Hobr/Blockly-Pawn?style=for-the-badge">
-        </el-footer>
-      </el-container>
+      <p>
+        If Element is successfully added to this project, you'll see an
+        <code v-text="'<el-button>'"></code>
+        below
+      </p>
+      <el-button>el-button</el-button>
     </div>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import Blockly from './components/Blockly.vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'app',
   components: {
-    // Blockly
+    HelloWorld
   }
 }
 </script>
+
 <style>
 #app {
-  font-family: sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
